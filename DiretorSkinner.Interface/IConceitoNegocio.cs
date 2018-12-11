@@ -1,10 +1,12 @@
 ﻿using DiretorSkinner.Tranporte;
+using DiretorSkinner.Util.Acesso;
 using System.Collections.Generic;
 using System.ServiceModel;
 
 namespace DiretorSkinner.Interface
 {
     [ServiceKnownType(typeof(ConceitoDto))]
+    [ServiceKnownType(typeof(TipoAcesso))]
     public partial interface IDiretorSkinnerNegocio
     {
         [OperationContract]

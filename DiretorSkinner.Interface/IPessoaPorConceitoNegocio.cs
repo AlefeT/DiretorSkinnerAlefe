@@ -8,9 +8,9 @@ namespace DiretorSkinner.Interface
     public partial interface IDiretorSkinnerNegocio
     {
         [OperationContract]
-        List<PessoaPorConceitoDto> ListarPessoaPorConceito();
+        List<PessoaPorConceitoDto> ListarPessoaPorTodosConceitos();
 
         [OperationContract]
-        PessoaPorConceitoDto ListarPessoaPorConceito(int id);
+        List<PessoaPorConceitoDto> ListarPessoaPorConceito(int id);
     }
 }

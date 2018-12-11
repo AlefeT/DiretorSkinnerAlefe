@@ -95,6 +95,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Carga\CargaSalaDeAula.xaml.cs">
+      <DependentUpon>CargaSalaDeAula.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carga\CargaDisciplina.xaml.cs">
+      <DependentUpon>CargaDisciplina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Carga\CargaConceito.xaml.cs">
+      <DependentUpon>CargaConceito.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\DataGridDecimalColumn.cs" />
+    <Compile Include="Controle\DataGridInt32Column.cs" />
     <Compile Include="Controle\FilteredComboBox.cs" />
     <Compile Include="Inicio\SalaDeAula.xaml.cs">
       <DependentUpon>SalaDeAula.xaml</DependentUpon>
@@ -111,12 +122,32 @@
     <Compile Include="Inicio\Pessoa.xaml.cs">
       <DependentUpon>Pessoa.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PessoaPorConceito.cs" />
+    <Compile Include="Relatorio\PessoaPorConceito.xaml.cs">
+      <DependentUpon>PessoaPorConceito.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\QtdePessoaPorDisciplina.xaml.cs">
+      <DependentUpon>QtdePessoaPorDisciplina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\RepetenciaDeDisciplinaPorTipoPessoa.xaml.cs">
+      <DependentUpon>RepetenciaDeDisciplinaPorTipoPessoa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Service References\Seymour\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Page Include="Carga\CargaSalaDeAula.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carga\CargaDisciplina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Carga\CargaConceito.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Inicio\SalaDeAula.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -170,6 +201,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Relatorio\PessoaPorConceito.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Relatorio\QtdePessoaPorDisciplina.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Relatorio\RepetenciaDeDisciplinaPorTipoPessoa.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Resources\BureauBlack.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -234,6 +277,9 @@
     <None Include="Service References\Seymour\DiretorSkinner.Tranporte.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\Seymour\DiretorSkinner.Util.Acesso.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\Seymour\service.wsdl" />
     <None Include="Service References\Seymour\service.xsd">
       <SubType>Designer</SubType>
@@ -251,9 +297,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="escola.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Relatorio\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DiretorSkinner.Tranporte\DiretorSkinner.Tranporte.csproj">

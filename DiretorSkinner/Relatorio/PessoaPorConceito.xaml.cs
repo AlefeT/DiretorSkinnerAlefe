@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace DiretorSkinner.Inicio
+namespace DiretorSkinner.Relatorio
 {
     /// <summary>
     /// Interaction logic for PessoaPorConceito.xaml
@@ -35,7 +35,7 @@ namespace DiretorSkinner.Inicio
         public void CarregarPessoaPorConceito()
         {
             //colocar regras para visualizações
-            this.ListaPessoaPorConceito = new ObservableCollection<PessoaPorConceitoDto>(App.Server.ListarPessoaPorConceito());
+            this.ListaPessoaPorConceito = new ObservableCollection<PessoaPorConceitoDto>(App.Server.ListarPessoaPorTodosConceitos());
         }
 
     }
